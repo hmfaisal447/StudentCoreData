@@ -14,6 +14,13 @@
 		83715DBF2597129B006EE1C6 /* StudentCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83715DBD2597129B006EE1C6 /* StudentCoreData.xcdatamodeld */; };
 		83715DC12597129D006EE1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83715DC02597129D006EE1C6 /* Assets.xcassets */; };
 		83715DC42597129D006EE1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83715DC22597129D006EE1C6 /* LaunchScreen.storyboard */; };
+		83715DCE259713C0006EE1C6 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83715DCC259713C0006EE1C6 /* Student+CoreDataClass.swift */; };
+		83715DCF259713C0006EE1C6 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83715DCD259713C0006EE1C6 /* Student+CoreDataProperties.swift */; };
+		83715DDF25972329006EE1C6 /* StudentDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83715DDE25972329006EE1C6 /* StudentDB.swift */; };
+		83715DE425972DA4006EE1C6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83715DDB25971599006EE1C6 /* CoreData.framework */; };
+		83715DF025974329006EE1C6 /* StudentDataListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83715DEF25974329006EE1C6 /* StudentDataListVC.swift */; };
+		83715DF32597434B006EE1C6 /* StudentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83715DF22597434B006EE1C6 /* StudentTVCell.swift */; };
+		83715E0C25977705006EE1C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83715E0B25977705006EE1C6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		83715DC02597129D006EE1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83715DC32597129D006EE1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83715DC52597129D006EE1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83715DCC259713C0006EE1C6 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		83715DCD259713C0006EE1C6 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83715DDB25971599006EE1C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83715DDE25972329006EE1C6 /* StudentDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDB.swift; sourceTree = "<group>"; };
+		83715DEF25974329006EE1C6 /* StudentDataListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataListVC.swift; sourceTree = "<group>"; };
+		83715DF22597434B006EE1C6 /* StudentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTVCell.swift; sourceTree = "<group>"; };
+		83715E0B25977705006EE1C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83715DE425972DA4006EE1C6 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				83715DB32597129B006EE1C6 /* StudentCoreData */,
+				83715DC52597129D006EE1C6 /* Info.plist */,
 				83715DB22597129B006EE1C6 /* Products */,
+				83715DDA25971599006EE1C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +77,59 @@
 			children = (
 				83715DB42597129B006EE1C6 /* AppDelegate.swift */,
 				83715DB62597129B006EE1C6 /* SceneDelegate.swift */,
-				83715DB82597129B006EE1C6 /* ViewController.swift */,
-				83715DBA2597129B006EE1C6 /* Main.storyboard */,
-				83715DC02597129D006EE1C6 /* Assets.xcassets */,
-				83715DC22597129D006EE1C6 /* LaunchScreen.storyboard */,
-				83715DC52597129D006EE1C6 /* Info.plist */,
-				83715DBD2597129B006EE1C6 /* StudentCoreData.xcdatamodeld */,
+				83715DD52597143A006EE1C6 /* Models */,
+				83715DD32597141E006EE1C6 /* Controllers */,
+				83715DD225971411006EE1C6 /* Views */,
+				83715DD125971402006EE1C6 /* Supporting Files */,
+				83715E0B25977705006EE1C6 /* Constants.swift */,
 			);
 			path = StudentCoreData;
+			sourceTree = "<group>";
+		};
+		83715DD125971402006EE1C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83715DC02597129D006EE1C6 /* Assets.xcassets */,
+				83715DC22597129D006EE1C6 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83715DD225971411006EE1C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83715DBA2597129B006EE1C6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83715DD32597141E006EE1C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83715DB82597129B006EE1C6 /* ViewController.swift */,
+				83715DEF25974329006EE1C6 /* StudentDataListVC.swift */,
+				83715DF22597434B006EE1C6 /* StudentTVCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		83715DD52597143A006EE1C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83715DCC259713C0006EE1C6 /* Student+CoreDataClass.swift */,
+				83715DCD259713C0006EE1C6 /* Student+CoreDataProperties.swift */,
+				83715DBD2597129B006EE1C6 /* StudentCoreData.xcdatamodeld */,
+				83715DDE25972329006EE1C6 /* StudentDB.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83715DDA25971599006EE1C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83715DDB25971599006EE1C6 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83715DF025974329006EE1C6 /* StudentDataListVC.swift in Sources */,
+				83715DCF259713C0006EE1C6 /* Student+CoreDataProperties.swift in Sources */,
+				83715DF32597434B006EE1C6 /* StudentTVCell.swift in Sources */,
 				83715DB92597129B006EE1C6 /* ViewController.swift in Sources */,
 				83715DB52597129B006EE1C6 /* AppDelegate.swift in Sources */,
+				83715E0C25977705006EE1C6 /* Constants.swift in Sources */,
 				83715DBF2597129B006EE1C6 /* StudentCoreData.xcdatamodeld in Sources */,
 				83715DB72597129B006EE1C6 /* SceneDelegate.swift in Sources */,
+				83715DDF25972329006EE1C6 /* StudentDB.swift in Sources */,
+				83715DCE259713C0006EE1C6 /* Student+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +378,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StudentCoreData/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = StudentCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
